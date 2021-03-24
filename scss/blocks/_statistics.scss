@@ -1,0 +1,103 @@
+.statistics {
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 41px;
+    padding-bottom: 36px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: rgba(114, 214, 255, 0.1);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+
+    // .statistics__border
+
+    &__border {
+        border: 2px dashed #72D6FF;
+        border-radius: 20px;
+        max-width: 1321px;
+        margin: 0 auto;
+        padding-top: 37px;
+        padding-bottom: 38px;
+    }
+
+    // .statistics__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .statistics__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 33.333%;
+    }
+
+    // .statistics__value
+
+    &__value {
+        width: 135px;
+        height: 135px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: Philosopher;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 100px;
+        line-height: 112px;
+        color: #2B2939;
+        background: url(../img/statistics/star.png) no-repeat center;
+    }
+
+    // .statistics__title
+
+    &__title {
+        font-family: Philosopher;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 39px;
+        color: #2B2939;
+        margin-bottom: 12px;
+        position: relative;
+
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            height: 2;
+            width: 65%;
+            border-radius: 50px;
+            border: 1px solid #0E72AE;
+        }
+    }
+
+    // .statistics__description
+
+    &__description {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #2B2939;
+    }
+}
