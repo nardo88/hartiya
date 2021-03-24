@@ -1,0 +1,125 @@
+.join {
+
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    padding: 115px 0;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: rgba(4, 159, 223, .5);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    // .join__wrapper
+
+    &__wrapper {
+        position: relative;
+        z-index: 10;
+    }
+
+    // .join__title
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 73px;
+        color: #FFFFFF;
+        margin-bottom: 70px;
+    }
+
+    // .join__form
+
+    &__form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .join__form-item
+
+    &__form-item {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 10px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 37px;
+            color: #FFFFFF;
+        }
+    }
+
+    // .join__email
+
+    &__email {
+        width: 386px;
+        height: 80px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        padding: 21px 0 21px 19px;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: rgba(43, 41, 57, .3);
+    }
+
+    // .join__name
+
+    &__name {
+        height: 80px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        padding: 21px 0 21px 19px;
+        width: 468px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: rgba(43, 41, 57, .3);
+    }
+
+    // .join__btn
+
+    &__btn {
+        width: 304px;
+        height: 80px;
+        background: #FEDB00;
+        border-radius: 12px;
+        align-self: flex-end;
+        border: none;
+        border: 1px solid #FEDB00;
+        transition: .3s;
+        outline: none;
+        cursor: pointer;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: #2B2939;
+
+        &:hover{
+            box-shadow: 0 0 7px 7px #2B2939;
+        }
+    }
+}
