@@ -12,3 +12,34 @@
     margin: 0 auto;
 }
 
+.border {
+    border: 2px dashed #72D6FF;
+    border-radius: 20px;
+    max-width: 1321px;
+    margin: 0 auto;
+    padding-top: 37px;
+    padding-bottom: 38px;
+}
+
+.title {
+    font-family: Philosopher;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+    color: #2B2939;
+    margin-bottom: 25px;
+    position: relative;
+
+    &:after {
+        content: '';
+        width: 122px;
+        height: 3px;
+        border-radius: 50px;
+        background: #0E72AE;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+    }
+
+}

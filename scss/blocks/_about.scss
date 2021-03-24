@@ -1,0 +1,42 @@
+.about {
+
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 53px;
+    padding-bottom: 44px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background-color: rgba(114, 214, 255, 0.1);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    // .about__wrapper
+
+    &__wrapper {}
+
+    // .about__title
+
+    &__title {}
+
+    // .about__text
+
+    &__text {
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 130.19%;
+        color: #2B2939;
+        margin-bottom: 15px;
+    }
+}
+
+.title {}
