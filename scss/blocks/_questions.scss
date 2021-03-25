@@ -50,6 +50,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
     }
 
     // .acardeon__title
@@ -73,6 +74,11 @@
         outline: none;
         background: transparent;
         cursor: pointer;
+        transition: .5s;
+
+        &--active{
+            transform: rotate(45deg);
+        }
 
         &:after{
             content: '';
@@ -103,7 +109,8 @@
 
     &__bottom {
         overflow: hidden;
-        padding-bottom: 19px;
+        height: 0;
+        transition: .5s;
     }
 
     // .acardeon__text
@@ -116,5 +123,7 @@
         line-height: 130.19%;
         color: #2B2939;
         max-width: 1026px;
+        padding-bottom: 19px;
+
     }
 }

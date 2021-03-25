@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -38,19 +39,19 @@
                 <nav class="header__nav nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">О Хартии</a>
+                            <a data-scroll="#about" href="#!" class="nav__link nav__link--scroll">О Хартии</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Участники/Инициативная группа</a>
+                            <a data-scroll="#members" href="#!" class="nav__link nav__link--scroll">Участники/Инициативная группа</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Вопросы-Ответы</a>
+                            <a data-scroll="#questions" href="#!" class="nav__link nav__link--scroll">Вопросы-Ответы</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Новости</a>
+                            <a data-scroll="#news" href="#!" class="nav__link nav__link--scroll">Новости</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#!" class="nav__link">Документы</a>
+                            <a data-scroll="#documents" href="#!" class="nav__link nav__link--scroll">Документы</a>
                         </li>
                         <li class="nav__item">
                             <a href="#!" class="nav__link">Жалобы и предложения</a>
@@ -100,7 +101,7 @@
         <img src="./img/map/map.jpg" alt="map">
     </div>
 
-    <section class="about">
+    <section id="about" class="about">
         <div class="border">
             <div class="container">
                 <div class="about__wrapper">
@@ -134,15 +135,42 @@
         </div>
     </section>
 
-    <section class="news plaster">
+    <section id="news" class="news plaster">
         <div class="container">
             <div class="news__wrapper">
                 <h2 class="news__title title">Новости</h2>
                 <div class="news__content">
-                    <div class="news__slider news-slider">
-                        <div class="news-slider__wrapper">
+                    <div class="news__slider news-slider swiper-container">
+                        <div class="news-slider__wrapper swiper-wrapper">
                             <!-- Начало слайда -->
-                            <div class="news-slider__item news-slide">
+                            <div class="news-slider__item news-slide swiper-slide">
+                                <div class="news-slide__date">25 мар. 2021 г.</div>
+                                <h3 class="news-slide__title">Межрегиональный круглый стол<br>с участием КПК<br>и СКПК</h3>
+                                <p class="news-slide__text">25 марта 2021 года в 10-00 по адресу: 400005, <br>г. Волгоград, пр. имени В.И. Ленина, 56a состоится межрегиональный круглый стол с участием КПК и СКПК с целью принятия Резолюции, в которой будет принята за основу Концепция Хартии солидарности в сфере выдачи займов, погашаемых из средств материнского (семейного) капитала, а также утвержден состав Оргкомитета, главной задачей которого станет разработка конкретных и прикладных мероприятий<br>по осуществлению проекта Хартии.</p>
+
+                                <!-- фон для слайда -->
+                                <div class="news-slide__background">
+                                    <img src="./img/news/bg-1-1.jpg" alt="background for slide">
+                                </div>
+                            </div>
+                            <!-- конец слайда -->
+
+                            <!-- Начало слайда -->
+                            <div class="news-slider__item news-slide swiper-slide">
+                                <div class="news-slide__date">25 мар. 2021 г.</div>
+                                <h3 class="news-slide__title">Межрегиональный круглый стол<br>с участием КПК<br>и СКПК</h3>
+                                <p class="news-slide__text">25 марта 2021 года в 10-00 по адресу: 400005, <br>г. Волгоград, пр. имени В.И. Ленина, 56a состоится межрегиональный круглый стол с участием КПК и СКПК с целью принятия Резолюции, в которой будет принята за основу Концепция Хартии солидарности в сфере выдачи займов, погашаемых из средств материнского (семейного) капитала, а также утвержден состав Оргкомитета, главной задачей которого станет разработка конкретных и прикладных мероприятий<br>по осуществлению проекта Хартии. 25 марта 2021 года в 10-00 по адресу: 400005</p>
+
+                                <!-- фон для слайда -->
+                                <div class="news-slide__background">
+                                    <img src="./img/news/bg-1-1.jpg" alt="background for slide">
+                                </div>
+                            </div>
+                            <!-- конец слайда -->
+
+
+                            <!-- Начало слайда -->
+                            <div class="news-slider__item news-slide swiper-slide">
                                 <div class="news-slide__date">25 мар. 2021 г.</div>
                                 <h3 class="news-slide__title">Межрегиональный круглый стол<br>с участием КПК<br>и СКПК</h3>
                                 <p class="news-slide__text">25 марта 2021 года в 10-00 по адресу: 400005, <br>г. Волгоград, пр. имени В.И. Ленина, 56a состоится межрегиональный круглый стол с участием КПК и СКПК с целью принятия Резолюции, в которой будет принята за основу Концепция Хартии солидарности в сфере выдачи займов, погашаемых из средств материнского (семейного) капитала, а также утвержден состав Оргкомитета, главной задачей которого станет разработка конкретных и прикладных мероприятий<br>по осуществлению проекта Хартии.</p>
@@ -166,7 +194,7 @@
     </section>
     
 
-    <section class="members plaster">
+    <section id="members" class="members plaster">
         <div class="border">
             <div class="container">
                 <div class="members__wrapper">
@@ -359,7 +387,7 @@
     </section>
 
 
-    <section class="questions plaster">
+    <section id="questions" class="questions plaster">
         <div class="container">
             <div class="questions__wrapper">
                 <h2 class="questions__title title">Вопросы - ответы</h2>
@@ -424,23 +452,26 @@
     </section>
 
 
-    <section class="documents plaster">
+    <section id="documents" class="documents plaster">
         <div class="container">
             <div class="documents__wrapper">
                 <h2 class="documents__title title">Документы</h2>
                 <div class="documents__content">
-                    <div class="documents-slider">
-                        <div class="documents-slider__wrapper">
-                            <div class="documents-slider__item">
+                    <div class="documents-slider swiper-container">
+                        <div class="documents-slider__wrapper swiper-wrapper">
+                            <div class="documents-slider__item swiper-slide">
                                 <img src="./img/documents/slide1.jpg" alt="document 1">
                             </div>
 
-                            <div class="documents-slider__item">
+                            <div class="documents-slider__item swiper-slide">
                                 <img src="./img/documents/slide2.jpg" alt="document 2">
                             </div>
 
-                            <div class="documents-slider__item">
+                            <div class="documents-slider__item swiper-slide">
                                 <img src="./img/documents/slide3.jpg" alt="document 3">
+                            </div>
+                            <div class="documents-slider__item swiper-slide">
+                                <img src="./img/documents/slide4.jpg" alt="document 4">
                             </div>
                         </div>
                     </div>
@@ -479,6 +510,13 @@
         </div>
     </footer>
 
+
+  
+
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

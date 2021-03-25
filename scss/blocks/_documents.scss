@@ -84,6 +84,7 @@
 }
 
 .documents-slider {
+    width: 100%;
 
     // .documents-slider__wrapper
 
@@ -96,5 +97,7 @@
 
     &__item {
         cursor: pointer;
+        display: flex;
+        justify-content: center;
     }
 }
