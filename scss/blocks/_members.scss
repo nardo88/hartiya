@@ -1,0 +1,159 @@
+.members {
+
+    // .members__wrapper
+
+    &__wrapper {
+        position: relative;
+        z-index: 10;
+    }
+
+    // .members__title
+
+    &__title {
+        display: flex;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 45px;
+        margin-bottom: 40px;
+    }
+
+    // .members__caption
+
+    &__caption {
+        color: #A5A5A5;
+        font-family: Philosopher;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 45px;
+        cursor: pointer;
+    }
+
+    // .members__active-title
+
+    &__active-title {
+        color: #000000;
+    }
+
+    // .members__tabs
+
+    &__tabs {}
+}
+
+.tabs {
+
+    // .tabs__item
+
+    &__item {
+        display: none;
+    }
+
+    // .tabs__item--active
+
+    &__item--active {
+        display: block;
+    }
+
+    // .tabs__info
+
+    &__info {
+        display: none;
+    }
+
+    // .tabs__table
+
+    &__table {
+        width: 100%;
+        border-collapse: collapse;
+
+
+        td {
+            border-bottom: 1px solid #000;
+            text-align: left;
+        }
+    }
+
+    // .tabs__title
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: #2B2939;
+
+        td {
+            padding: 10px;
+        }
+
+    }
+
+    // .tabs__data
+
+    &__data {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        color: #2B2939;
+        opacity: 0.7;
+
+        td {
+            border-bottom: 1px solid rgba(0, 0, 0, .5);
+            max-width: 268px;
+            padding: 10px;
+        }
+
+    }
+
+    // .tabs__pagination
+
+    &__pagination {}
+}
+
+.pagination {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: flex-end;
+
+    // .pagination__prev
+
+    &__prev {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../img/members/btn_prev.png) no-repeat center;
+        background-size: 45%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    // .pagination__vlues
+
+    &__vlues {
+        margin: 0 10px;
+    }
+
+    // .pagination__link
+
+    &__link {}
+
+    // .pagination__next
+
+    &__next {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url(../img/members/btn_next.png) no-repeat center;
+        background-size: 45%;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+    }
+}
