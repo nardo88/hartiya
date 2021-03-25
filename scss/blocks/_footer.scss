@@ -1,0 +1,58 @@
+.footer {
+    padding: 165px 0 55px;
+    background: url(../img/footer/bg.jpg) no-repeat top;
+    background-size: cover;
+
+    // .footer__wrapper
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    // .footer__logo
+
+    &__logo {}
+
+    // .footer__contacts
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        max-width: 351px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120.69%;
+        color: #2B2939;
+
+        span{
+            margin-bottom: 5px;
+        }
+    }
+
+    // .footer__adress
+
+    &__adress {}
+
+    // .footer__phone
+
+    &__phone {}
+
+    // .footer__mail
+
+    &__mail {}
+
+    // .footer__rules
+
+    &__rules {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 130.19%;
+        color: #2B2939;
+    }
+}
