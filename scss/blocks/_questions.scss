@@ -1,0 +1,120 @@
+.questions {
+    padding-bottom: 76px;
+
+    // .questions__wrapper
+
+    &__wrapper {
+        position: relative;
+        z-index: 10;
+    }
+
+    // .questions__title
+
+    &__title {}
+
+    // .questions__description
+
+    &__description {
+        margin-top: 12px;
+        margin-bottom: 20px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 130.19%;
+        color: #2B2939;
+    }
+
+    // .questions__content
+
+    &__content {}
+}
+
+.acardeon {
+
+    // .acardeon__item
+
+    &__item {
+        border-top: 1px solid rgba(43, 41, 57, .5);
+
+        &:last-child {
+            border-bottom: 1px solid rgba(43, 41, 57, .5);
+
+        }
+    }
+
+    // .acardeon__top
+
+    &__top {
+        padding: 15px 10px 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .acardeon__title
+
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 130.19%;
+        color: #2B2939;
+    }
+
+    // .acardeon__btn
+
+    &__btn {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        border: none;
+        outline: none;
+        background: transparent;
+        cursor: pointer;
+
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 50%;
+            height: 3px;
+            background: #00A0E1;
+            transform: translateY(-50%);
+        }
+
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            width: 3px;
+            top: 0;
+            height: 100%;
+            background: #00A0E1;
+            transform: translateX(-50%);
+        }
+    }
+
+    // .acardeon__bottom
+
+    &__bottom {
+        overflow: hidden;
+        padding-bottom: 19px;
+    }
+
+    // .acardeon__text
+
+    &__text {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 130.19%;
+        color: #2B2939;
+        max-width: 1026px;
+    }
+}
