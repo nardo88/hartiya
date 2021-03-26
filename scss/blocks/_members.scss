@@ -159,3 +159,50 @@
 
     }
 }
+
+table {
+    tbody {
+        flex-grow: 1;
+        width: 100%;
+    }
+}
+
+
+.table-members{
+    display: none;
+
+    &--active{
+        display: block;
+    }
+}
+
+
+.table-group{
+    display: none;
+
+    &--active{
+        display: block;
+    }
+
+   
+}
+
+.tabs__data-num{
+    max-width: 155px !important;
+    margin-right: 20px;
+
+}
+.tabs__data-name{
+    max-width: 255px !important;
+
+}
+.tabs__data-rights{
+    max-width: 337px !important;
+
+}
+.tabs__data-place{
+    max-width: 535px !important;
+
+}
+
+
