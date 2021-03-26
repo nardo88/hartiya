@@ -203,43 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         place: ''
                     }
                 },
-                // дополнительные пользователи для проверки пагинации
-                {
-                    organization: 'Ассоциация КПК «Нижегородский кредитный союз»',
-                    adress: 'г. Нижний Новгород',
-                    contacts: {
-                        mail: '',
-                        phone: ''
-                    },
-                    person: {
-                        name: '',
-                        place: ''
-                    }
-                },
-                {
-                    organization: 'Ассоциация КПК «Нижегородский кредитный союз»',
-                    adress: 'г. Нижний Новгород',
-                    contacts: {
-                        mail: '',
-                        phone: ''
-                    },
-                    person: {
-                        name: '',
-                        place: ''
-                    }
-                },
-                {
-                    organization: 'Ассоциация КПК «Нижегородский кредитный союз»',
-                    adress: 'г. Нижний Новгород',
-                    contacts: {
-                        mail: '',
-                        phone: ''
-                    },
-                    person: {
-                        name: '',
-                        place: ''
-                    }
-                },
+                
+              
 
             ],
 
@@ -272,43 +237,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-                // дополнительные пользователи для проверки пагинации
-                {
-                    person: 'Бадураева Эржена Пурбоевна',
-                    rights: 'Член «Клуба директоров» в кредитной кооперации',
-                    place: 'Председатель Правления КПК «Кредит-Партнер» г. Чита'
-                },
-                {
-                    person: 'Баранов Виталий Витальевич',
-                    rights: 'Член «Дискуссионного клуба - Д&К» кредитной кооперации Член «Клуба директоров» в кредитной кооперации',
-                    place: 'Президент Ассоциации КПК «НКС»,	г. Нижний Новгород'
-                },
-                {
-                    person: 'Мешков Вадим Васильевич',
-                    rights: 'Модератор «Дискуссионного клуба - Д&К» кредитной кооперации',
-                    place: 'Исполнительный директор Южнорегиональной ассоциации кредитных союзов (ЮРАКС), г. Ростов-на-Дону Член Наблюдательного совета СКПК «Мой круг», г. Ростов-на-Дону'
-                },
-                {
-                    person: 'Мокина Светлана Валерьевна',
-                    rights: 'Член «Клуба директоров» в кредитной кооперации',
-                    place: 'Председатель Правления КПК «Свой Дом», г. Краснодар'
-                },
+             
 
             ]
         }
 
 
-        // заполняем инициативную группу
-        // data.group.forEach((item, i) => {
-        //     tableGroup.insertAdjacentHTML('beforeend', `
-        //     <tr class="tabs__data">
-        //         <td>${i + 1}</td>
-        //         <td>${item.person}</td>
-        //         <td>${item.rights}</td>
-        //         <td>${item.place}</td>
-        //     </tr>
-        //     `)
-        // })
 
         // =======================================================================MEMBERS НАЧАЛО========================================================//
 
@@ -490,8 +424,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             })
 
+        }
 
+        const paginationGroup = target => {
+            const links = document.querySelectorAll('.link-group');
+            const tableMembers = document.querySelectorAll('.table-group');
 
+            links.forEach((item, i) => {
+                if (item === target) {
+                    tableMembers.forEach((elem, ind) => {
+                        elem.classList.remove('table-group--active');
+                        if (ind === i) {
+                            elem.classList.add('table-group--active');
+                        }
+                    })
+                }
+            })
         }
 
         // обработчик события на клик
@@ -506,6 +454,11 @@ document.addEventListener('DOMContentLoaded', () => {
             // кликаем по пагинации members
             if (target.classList.contains('link-members')) {
                 paginationMembers(target);
+            }
+
+            // кликаем по пагинации group
+            if (target.classList.contains('link-group')) {
+                paginationGroup(target);
             }
 
 
