@@ -1,0 +1,158 @@
+.overlay-offer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .3);
+    z-index: 100;
+    overflow: hidden;
+    visibility: hidden;
+
+
+   
+
+}
+
+.popup-offer {
+    background: url(../img/offer/bg.jpg) repeat;
+    border-radius: 20px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: relative;
+    top: -200%;
+    transform: translateY(-50%);
+    padding: 25px 50px 50px;
+    transition: .3s;
+
+    // .popup-offer__title
+
+    &__title {
+        font-family: Philosopher;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 70px;
+        line-height: 78px;
+        color: #2B2939;
+        position: relative;
+
+        &:after {
+            content: '';
+            width: 30%;
+            height: 3px;
+            border-radius: 50px;
+            background: #0E72AE;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+        }
+    }
+
+    // .popup-offer__description
+
+    &__description {
+        margin-top: 31px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 130.19%;
+        color: #2B2939;
+    }
+
+    // .popup-offer__form
+
+    &__form {
+        width: 100%;
+    }
+
+    // .popup-offer__message
+
+    &__message {
+        margin-top: 20px;
+        width: 100%;
+        min-height: 241px;
+        border: 1px solid #2B2939;
+        border-radius: 16px;
+        padding: 20px;
+        outline: none;
+
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: rgba(43, 41, 57, .5);
+    }
+
+    // .popup-offer__bottom
+
+    &__bottom {
+        margin-top: 43px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .popup-offer__btn
+
+    &__btn {
+        width: 230px;
+        height: 60px;
+        left: 50px;
+        top: 490px;
+
+        border-radius: 10px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;
+        color: #2B2939;
+        cursor: pointer;
+        outline: none;
+        
+    }
+}
+
+.cancel {
+    background: #E2E2E2;
+    color: #2B2939;
+    border: 2px solid #E2E2E2;
+    transition: .3s;
+
+
+    &:hover{
+        background: #2B2939;
+        color: #E2E2E2;
+    
+    }
+}
+
+.send {
+    color: #F1F0E1;
+    background: #DD2205;
+    border: 2px solid #DD2205;
+    transition: .3s;
+
+    &:hover{
+        color: #DD2205;
+        background: #ffffff;
+    
+    }
+
+}
+
+
+
+.overlay-offer--active{
+    visibility: visible;
+}
+
+
+
+.popup-offer--active{
+    top: 50%;
+
+}

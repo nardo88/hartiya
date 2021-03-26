@@ -3,6 +3,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // плавный скролл при нажатии на элемент меню 
     const menu = (e) => {
         const navLink = document.querySelectorAll('.nav__link--scroll');
+        const offer = document.querySelector('.offer');
+
+           // overlay-offer--active
+        const overlayOffer = document.querySelector('.overlay-offer');
+        const popupOffer = document.querySelector('.popup-offer');
 
         navLink.forEach(item => {
             item.addEventListener('click', e => {
@@ -14,6 +19,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     behavior: 'smooth'
                 });
             })
+        })
+
+        offer.addEventListener('click', e => {
+            e.preventDefault();
+            overlayOffer.classList.add('overlay-offer--active');
+            popupOffer.classList.add('popup-offer--active');
+        })
+
+        const closePopupOffer = () => {
+            overlayOffer.classList.remove('overlay-offer--active');
+            popupOffer.classList.remove('popup-offer--active');
+        }
+
+        overlayOffer.addEventListener('click', e => {
+            const target = e.target;
+            if (target.classList.contains('overlay-offer--active')){
+                closePopupOffer();
+            }
         })
 
     }
@@ -466,5 +489,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     members();
+
+
+
 
 })
