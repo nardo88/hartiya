@@ -33,7 +33,15 @@
                                 <img src="./img/header/telegram.svg" alt="">
                             </a>
                         </div>
-                        <a href="#!" class="header__request">Присоединиться</a>
+                        <a href="#!" class="header__request request">Присоединиться</a>
+                    </div>
+
+                    <div class="mobile">
+                        <div class="mobile__burger">
+                            <button class="mobile__btn burger">
+                                <span class="burger__item"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <nav class="header__nav nav">
@@ -60,12 +68,37 @@
                             <a href="#!" class="nav__link">«Хартия солидарности КПК и СКПК»</a>
                         </li>
                     </ul>
+                    <div class="nav__mobile ">
+                        <div class="mobile-phone">
+                            <a href="tel:8784457403893">+7 (84457) 40-38-93</a>
+                        </div>
+                        <div class="nav__mobile-social">
+                            <a href="#" class="header__social-link">
+                                <img src="./img/header/whatsApp.svg" alt="">
+                            </a>
+                            <a href="#" class="header__social-link">
+                                <img src="./img/header/facebook.svg" alt="">
+                            </a>
+                            <a href="#" class="header__social-link">
+                                <img src="./img/header/telegram.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="nav__mobile-close">
+                        <button class="close">
+
+                        </button>
+                    </div>
                 </nav>
 
                 <div class="header__mission mission">
                     <h2 class="mission__title">Миссия Хартии:</h2>
                     <p class="mission__text">Кредитные потребительские кооперативы и сельскохозяйственные кредитные потребительские кооперативы являясь участниками Хартии и объединяя усилия в целях закрепления прозрачных механизмов деятельности по предоставлению займов пайщикам с дальнейшим погашением средствами МСК без использования «серых» схем  защищают держателей сертификата от неправомерных действий недобросовестных участников рынка кредитной кооперации.</p>
                 </div>
+
+                <a href="#!" class="header__mobile-request request">Присоединиться</a>
+                
             </div>
         </div>
     </header>
@@ -98,7 +131,8 @@
     </section>
 
     <div class="map">
-        <img src="./img/map/map.jpg" alt="map">
+        <img src="./img/map/map.jpg" alt="map" class="desctop-map">
+        <img src="./img/map/mobile__map.jpg" alt="mobile map" class="mobile-map">
     </div>
 
     <section id="about" class="about">
@@ -135,66 +169,57 @@
         </div>
     </section>
 
-    <section id="news" class="news plaster">
+    <!-- <section id="news" class="news plaster">
         <div class="container">
             <div class="news__wrapper">
                 <h2 class="news__title title">Новости</h2>
                 <div class="news__content">
                     <div class="news__slider news-slider swiper-container">
                         <div class="news-slider__wrapper swiper-wrapper">
-                            <!-- Начало слайда -->
                             <div class="news-slider__item news-slide swiper-slide">
                                 <div class="news-slide__date">25 мар. 2021 г.</div>
                                 <h3 class="news-slide__title">Межрегиональный круглый стол<br>с участием КПК<br>и СКПК</h3>
                                 <p class="news-slide__text">25 марта 2021 года в 10-00 по адресу: 400005, <br>г. Волгоград, пр. имени В.И. Ленина, 56a состоится межрегиональный круглый стол с участием КПК и СКПК с целью принятия Резолюции, в которой будет принята за основу Концепция Хартии солидарности в сфере выдачи займов, погашаемых из средств материнского (семейного) капитала, а также утвержден состав Оргкомитета, главной задачей которого станет разработка конкретных и прикладных мероприятий<br>по осуществлению проекта Хартии.</p>
 
-                                <!-- фон для слайда -->
                                 <div class="news-slide__background">
                                     <img src="./img/news/bg-1-1.jpg" alt="background for slide">
                                 </div>
                             </div>
-                            <!-- конец слайда -->
 
-                            <!-- Начало слайда -->
                             <div class="news-slider__item news-slide swiper-slide">
                                 <div class="news-slide__date">25 мар. 2021 г.</div>
                                 <h3 class="news-slide__title">Межрегиональный круглый стол<br>с участием КПК<br>и СКПК</h3>
                                 <p class="news-slide__text">25 марта 2021 года в 10-00 по адресу: 400005, <br>г. Волгоград, пр. имени В.И. Ленина, 56a состоится межрегиональный круглый стол с участием КПК и СКПК с целью принятия Резолюции, в которой будет принята за основу Концепция Хартии солидарности в сфере выдачи займов, погашаемых из средств материнского (семейного) капитала, а также утвержден состав Оргкомитета, главной задачей которого станет разработка конкретных и прикладных мероприятий<br>по осуществлению проекта Хартии. 25 марта 2021 года в 10-00 по адресу: 400005</p>
 
-                                <!-- фон для слайда -->
                                 <div class="news-slide__background">
                                     <img src="./img/news/bg-1-1.jpg" alt="background for slide">
                                 </div>
                             </div>
-                            <!-- конец слайда -->
 
 
-                            <!-- Начало слайда -->
                             <div class="news-slider__item news-slide swiper-slide">
                                 <div class="news-slide__date">25 мар. 2021 г.</div>
                                 <h3 class="news-slide__title">Межрегиональный круглый стол<br>с участием КПК<br>и СКПК</h3>
                                 <p class="news-slide__text">25 марта 2021 года в 10-00 по адресу: 400005, <br>г. Волгоград, пр. имени В.И. Ленина, 56a состоится межрегиональный круглый стол с участием КПК и СКПК с целью принятия Резолюции, в которой будет принята за основу Концепция Хартии солидарности в сфере выдачи займов, погашаемых из средств материнского (семейного) капитала, а также утвержден состав Оргкомитета, главной задачей которого станет разработка конкретных и прикладных мероприятий<br>по осуществлению проекта Хартии.</p>
 
-                                <!-- фон для слайда -->
                                 <div class="news-slide__background">
                                     <img src="./img/news/bg-1-1.jpg" alt="background for slide">
                                 </div>
                             </div>
-                            <!-- конец слайда -->
                         </div>
                     </div>
                 </div>
-                <!-- Кнопки управления слайдером -->
+
                 <div class="news__arrows">
                     <button class="news__btn news__prev"></button>
                     <button class="news__btn news__next"></button>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     
 
-    <section id="members" class="members plaster">
+    <!-- <section id="members" class="members plaster">
         <div class="border">
             <div class="container">
                 <div class="members__wrapper">
@@ -204,7 +229,7 @@
                     </div>
 
                     <div class="members__tabs tabs ">
-                        <!-- Участники -->
+
                         <div class="tabs__item tabs__item--active">
                             <div class="tabs__info">
                                 <span>Зарегистрировано 11 организаций</span>
@@ -223,7 +248,6 @@
                             </div>
                         </div>
 
-                        <!-- Инициативная группа -->
                         <div class="tabs__item ">
 
                             <div class="tabs__info">
@@ -248,17 +272,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    <section id="questions" class="questions plaster">
+    <!-- <section id="questions" class="questions plaster">
         <div class="container">
             <div class="questions__wrapper">
                 <h2 class="questions__title title">Вопросы - ответы</h2>
                 <p class="questions__description">Здесь Вы найдете ответы на часто задаваемые вопросы</p>
                 <div class="questions__content">
                     <div class="acardeon">
-                        <!-- 1 акардеон -->
                         <div class="acardeon__item">
                             <div class="acardeon__top">
                                 <span class="acardeon__title">Как присоединиться к Хартии?</span>
@@ -271,7 +294,6 @@
                             </div>
                         </div>
 
-                        <!-- 2 акардеон -->
                         <div class="acardeon__item">
                             <div class="acardeon__top">
                                 <span class="acardeon__title">Что делать если организация не появилась в списке?</span>
@@ -284,7 +306,6 @@
                             </div>
                         </div>
 
-                        <!-- 3 акардеон -->
                         <div class="acardeon__item">
                             <div class="acardeon__top">
                                 <span class="acardeon__title">Какие документы нужно прикрепить?</span>
@@ -297,7 +318,6 @@
                             </div>
                         </div>
 
-                        <!-- 4 акардеон -->
                         <div class="acardeon__item">
                             <div class="acardeon__top">
                                 <span class="acardeon__title">Где взять форму заявления о присоединении к Хартии?</span>
@@ -313,10 +333,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    <section id="documents" class="documents plaster">
+    <!-- <section id="documents" class="documents plaster">
         <div class="container">
             <div class="documents__wrapper">
                 <h2 class="documents__title title">Документы</h2>
@@ -355,10 +375,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__logo">
@@ -372,7 +392,7 @@
                 <div class="footer__rules">© 2021. Все права защищены. </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
 

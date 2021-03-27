@@ -1,0 +1,685 @@
+@media (max-width: 1360px) {
+    .statistics {
+        padding: 78px 15px 87px;
+    }
+
+    .about {
+        padding: 53px 15px 44px;
+    }
+}
+
+
+
+@media (max-width: 1265px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .overlay-offer {
+        padding: 0 20px;
+    }
+
+    .join {
+        &__title {
+            font-size: 55px;
+            line-height: 65px;
+        }
+
+        &__form-item {
+            label {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+
+        &__email {
+            width: 320px;
+        }
+    }
+
+
+
+
+}
+
+//======================================================================= 1200 ====================================
+
+@media (max-width: 1200px) {
+
+    .header {
+        &__logo {
+            img {
+                margin-right: 55px;
+                width: 200px;
+            }
+        }
+
+        &__request {
+            font-size: 16px;
+            width: 165px;
+            height: 35px;
+        }
+    }
+
+    .phone {
+        font-size: 16px;
+    }
+
+    .nav {
+        &__item {
+            font-size: 20px;
+            margin-right: 20px;
+        }
+
+        &__link {}
+    }
+
+    .mission {
+        &__title {
+            font-size: 30px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+    }
+
+    .popup-offer {
+
+        &__title {
+            font-size: 50px;
+        }
+
+        &__description {
+            font-size: 35px;
+        }
+
+    }
+
+    .statistics {
+        &__value {
+            background-size: cover;
+            width: 110px;
+            height: 110px;
+            font-size: 70px;
+            line-height: 80px;
+        }
+
+        &__title {
+            font-size: 26px;
+            line-height: 34px;
+        }
+
+        &__description {
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+
+    .title {
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .about__text {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .join {
+        padding: 90px 0;
+
+        &__title {
+            font-size: 45px;
+            line-height: 55px;
+        }
+
+        &__form-item {
+            label {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+
+        &__email {
+            width: 290px;
+        }
+
+        &__name {
+            width: 380px;
+        }
+
+        &__btn {
+            font-size: 24px;
+            width: 280px;
+        }
+    }
+}
+
+//======================================================================= 992 ====================================
+@media (max-width: 992px) {
+    .header {
+        &__social-link {
+            margin-right: 8px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .nav {
+        margin-bottom: 125px;
+    }
+
+    .popup-offer {
+
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+
+            &:after {
+                width: 20%;
+            }
+        }
+
+        &__description {
+            font-size: 24px;
+            margin-top: 25px;
+        }
+
+        &__message {
+            min-height: 210px;
+            font-size: 22px;
+
+        }
+
+        &__btn {
+            font-size: 22px;
+            height: 45px;
+            width: 190px;
+        }
+
+    }
+
+    .statistics {
+        &__value {
+            width: 100px;
+            height: 100px;
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 30px;
+            margin-top: 6px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 22px;
+            max-width: 80%;
+        }
+    }
+
+    .title {
+        font-size: 30px;
+
+        &:after {
+            width: 85px;
+        }
+    }
+
+    .about__text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .join {
+        padding: 70px 0;
+
+
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+            margin-bottom: 40px;
+        }
+
+        &__form-item {
+            label {
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+
+        &__email {
+            width: 240px;
+            height: 60px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__name {
+            width: 340px;
+            height: 60px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__btn {
+            font-size: 24px;
+            width: 280px;
+            height: 60px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+//======================================================================= 910 ====================================
+@media (max-width: 910px) {
+    .join {
+        &__form-item {
+            width: 100%;
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 35px;
+            line-height: 45px;
+            margin-bottom: 35px;
+        }
+
+        &__form-item {
+            label {
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        &__form {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__email {
+            width: 100%;
+            height: 60px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+
+        &__name {
+            width: 100%;
+            height: 60px;
+            font-size: 24px;
+            line-height: 32px;
+        
+        }
+
+        &__btn {
+            font-size: 24px;
+            width: 280px;
+            height: 60px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
+
+
+//======================================================================= 768 ====================================
+@media (max-width: 768px) {
+    .header {
+        padding-bottom: 65px;
+
+        &__logo {
+            img {
+                margin-right: 35px;
+                width: 160px;
+            }
+        }
+    }
+
+    .phone {
+        font-size: 14px;
+    }
+
+    .nav {
+        margin-bottom: 35px;
+
+        &__item {
+            font-size: 16px;
+            margin-right: 15px;
+        }
+    }
+
+    .mission {
+        &__text {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    .popup-offer {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+        }
+
+        &__description {
+            font-size: 18px;
+        }
+
+        &__message {
+            min-height: 165px;
+        }
+    }
+
+
+    .statistics {
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__item {
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+
+    }
+
+    .title {
+        font-size: 26px;
+
+        &:after {
+            width: 65px;
+        }
+    }
+
+    .about__text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+//======================================================================= 720 ====================================
+
+@media (max-width: 720px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .header {
+        &__social {
+            display: none;
+        }
+
+        &__logo {}
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        z-index: 300;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        padding: 105px 20px 20px;
+        display: none;
+
+
+        &__list {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__item {
+            margin-right: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &__mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__mobile-close {
+            display: block;
+        }
+
+
+    }
+
+    .nav-open {
+        display: block;
+    }
+
+    .popup-offer {
+
+        &__title {
+            font-size: 24px;
+            line-height: 34px;
+
+
+        }
+
+        &__description {
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        &__message {
+            min-height: 145px;
+            padding: 10px;
+            font-size: 18px;
+
+        }
+
+        &__btn {
+            font-size: 18px;
+            height: 40px;
+            width: 140px;
+        }
+
+    }
+
+    .header__mobile-request {
+        display: flex;
+    }
+
+
+}
+
+//======================================================================= 576 ====================================
+
+@media (max-width: 576px) {
+    .popup-offer {
+        padding: 20px 30px 30px;
+    }
+
+    .statistics {
+        padding: 50px 15px 60px;
+    }
+
+    .map {
+        height: 660px;
+    }
+
+    .desctop-map {
+        display: none;
+    }
+
+    .mobile-map {
+        display: block;
+    }
+
+    .title {
+        font-size: 20px;
+        line-height: 28px;
+
+        &:after {
+            width: 65px;
+        }
+    }
+
+    .about__text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .join {
+        &__btn {
+            display: block;
+            margin: 60px auto 0;
+            width: 276px;
+            height: 50px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+
+        &__email{
+            height: 50px;
+            font-size: 20px;
+            line-height: 24px;
+
+        }
+
+        &__name{
+            height: 50px;
+            line-height: 24px;
+            font-size: 20px;
+
+        }
+
+        &__title{
+            font-size: 28px;
+        }
+    }
+
+}
+
+//======================================================================= 480 ====================================
+
+@media (max-width: 480px) {
+    .popup-offer {
+
+        &__title {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__description {
+            font-size: 14px;
+            margin-top: 17px;
+        }
+
+        &__message {
+            min-height: 130px;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 18px;
+
+        }
+
+        &__bottom {
+            margin-top: 30px;
+        }
+
+        &__btn {
+            font-size: 16px;
+            line-height: 18px;
+            height: 35px;
+            width: 115px;
+        }
+
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 24px;
+
+        &:after {
+            width: 45px;
+        }
+    }
+
+    .about__text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+//======================================================================= 400 ====================================
+@media (max-width: 400px) {
+    .popup-offer {
+        padding: 10px 20px 25px;
+        border-radius: 10px;
+
+        &__title {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__description {
+            font-size: 12px;
+            margin-top: 15px;
+        }
+
+        &__message {
+            min-height: 130px;
+            padding: 10px;
+            font-size: 14px;
+            line-height: 18px;
+
+        }
+
+        &__bottom {
+            margin-top: 30px;
+        }
+
+        &__btn {
+            font-size: 12px;
+            line-height: 14px;
+            height: 28px;
+            width: 90px;
+        }
+
+    }
+
+    .mission__text {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+
+//======================================================================= 320 ====================================
+
+@media (max-width: 320px) {
+
+    .mission__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

@@ -60,7 +60,7 @@
             margin-right: 25px;
         }
 
-        &:hover{
+        &:hover {
             transform: translateY(-2px);
         }
 
@@ -139,7 +139,7 @@
         position: relative;
 
 
-        &:after{
+        &:after {
             content: '';
             height: 1px;
             width: 0%;
@@ -151,8 +151,8 @@
 
         }
 
-        &:hover{
-            &:after{
+        &:hover {
+            &:after {
                 width: 100%;
             }
         }
@@ -191,5 +191,198 @@
         line-height: 30px;
         color: #2B2939;
         max-width: 1118px;
+    }
+}
+
+
+.mobile {
+    display: none;
+
+    // .mobile__burger
+
+    &__burger {}
+
+    // .mobile__btn
+
+    &__btn {}
+}
+
+.burger {
+    width: 41px;
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    height: 29px;
+
+    // .burger__item
+
+    &__item {
+        display: block;
+        width: 41px;
+        border-radius: 20px;
+        border: 2px solid #135D96;
+        height: 0px;
+        position: relative;
+
+        &:before {
+            content: '';
+            width: 41px;
+            border-radius: 20px;
+            border: 2px solid #135D96;
+            position: absolute;
+            top: -11px;
+            left: -2px;
+            right: 0;
+            transition: .2s;
+            box-sizing: border-box;
+        }
+
+        &:after {
+            content: '';
+            width: 41px;
+            border-radius: 20px;
+            border: 2px solid #135D96;
+            position: absolute;
+            bottom: -11px;
+            left: -2px;
+            transition: .2s;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.nav {
+
+    // .nav__mobile
+
+    &__mobile {
+        display: none;
+    }
+
+    // .nav__mobile-social
+
+    &__mobile-social {
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+
+        a {
+            margin: 0 !important;
+        }
+    }
+}
+
+.mobile-phone {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: #2B2939;
+    margin-bottom: 20px;
+
+    a {
+        color: inherit;
+    }
+
+}
+
+.header {
+
+    // .header__social-link
+
+    &__social-link {}
+}
+
+
+.nav {
+
+    // .nav__mobile-close
+
+    &__mobile-close {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+
+    }
+}
+
+.close {
+    width: 38px;
+    height: 38px;
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    outline: none;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 38px;
+        height: 3px;
+        background: #135D96;
+        position: absolute;
+        left: -1px;
+        top: 50%;
+        transform: rotate(45deg) translateY(-50%);
+
+
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        width: 38px;
+        height: 3px;
+        background: #135D96;
+        position: absolute;
+        right: -1px;
+        top: 50%;
+        transform: rotate(-45deg) translateY(-50%);
+
+
+    }
+}
+
+.header__mobile-request {
+    width: 220px;
+    height: 40px;
+    background: #135D96;
+    border: 2px solid #135D96;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    display: none;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #F1F0E1;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    margin-top: 30px;
+
+    &:hover {
+        background: #fff;
+        color: #135D96;
+
+
     }
 }

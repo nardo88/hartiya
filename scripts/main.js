@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu = (e) => {
         const navLink = document.querySelectorAll('.nav__link--scroll');
         const offer = document.querySelector('.offer');
+        const header = document.querySelector('.header');
+        const nav = document.querySelector('.nav');
 
            // overlay-offer--active
         const overlayOffer = document.querySelector('.overlay-offer');
@@ -25,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             overlayOffer.classList.add('overlay-offer--active');
             popupOffer.classList.add('popup-offer--active');
+            togleMenu();
         })
 
         const closePopupOffer = () => {
@@ -36,6 +39,35 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = e.target;
             if (target.classList.contains('overlay-offer--active')){
                 closePopupOffer();
+            }
+        })
+
+        // открытие закрытие меню на мобильной версии
+
+
+        const togleMenu = () => {
+            nav.classList.toggle('nav-open')
+        }
+
+        header.addEventListener('click', e => {
+            const target = e.target;
+
+            const btn = target.closest('.burger');
+            if (btn){
+                togleMenu();
+            }
+
+            if (target.classList.contains('close')){
+                togleMenu(); 
+            }
+
+            if (target.classList.contains('request')){
+                e.preventDefault();
+                const scrollHigth = document.querySelector('.join').offsetTop;
+                window.scrollTo({
+                    top: scrollHigth,
+                    behavior: 'smooth'
+                });
             }
         })
 
@@ -55,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    news();
+    // news();
 
     // акардеон
     const acardeon = () => {
@@ -101,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    acardeon();
+    // acardeon();
 
 
     const documents = () => {
@@ -126,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    documents();
+    // documents();
 
 
     const members = () => {
@@ -488,7 +520,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    members();
+    // members();
 
 
 
