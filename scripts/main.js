@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    // news();
+    news();
 
     // акардеон
     const acardeon = () => {
