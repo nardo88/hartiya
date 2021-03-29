@@ -908,6 +908,15 @@
         }
     }
 
+    .popup-documents{
+        width: 90%;
+        height: auto;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+    }
+
 
 }
 

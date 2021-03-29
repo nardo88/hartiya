@@ -101,3 +101,36 @@
         justify-content: center;
     }
 }
+
+
+
+.overlay-documents {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    visibility: hidden;
+
+    &--open{
+        visibility: visible;
+    }
+
+}
+.popup-documents {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    height: 90%;
+    width: 450px;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    
+}
+
+
