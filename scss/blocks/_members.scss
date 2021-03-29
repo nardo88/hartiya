@@ -18,6 +18,7 @@
         font-size: 40px;
         line-height: 45px;
         margin-bottom: 40px;
+        align-items: center;
     }
 
     // .members__caption
@@ -143,7 +144,22 @@
 
     // .pagination__link
 
-    &__link {}
+    &__link {
+        margin: 0 5px;
+        text-decoration: none;
+        font-family: Montserrat;
+        font-size: 30px;
+        line-height: 37px;
+        color: #A0A0A0;
+
+        &--active {
+            background: #00A0E1;
+            color: #fff;
+            border-radius: 3px;
+            padding: 2px 5px;
+            text-decoration: underline;
+        }
+    }
 
     // .pagination__next
 
@@ -168,41 +184,42 @@ table {
 }
 
 
-.table-members{
+.table-members {
     display: none;
 
-    &--active{
+    &--active {
         display: block;
     }
 }
 
 
-.table-group{
+.table-group {
     display: none;
 
-    &--active{
+    &--active {
         display: block;
     }
 
-   
+
 }
 
-.tabs__data-num{
+.tabs__data-num {
     max-width: 155px !important;
     margin-right: 20px;
 
 }
-.tabs__data-name{
+
+.tabs__data-name {
     max-width: 255px !important;
 
 }
-.tabs__data-rights{
+
+.tabs__data-rights {
     max-width: 337px !important;
 
 }
-.tabs__data-place{
+
+.tabs__data-place {
     max-width: 535px !important;
 
 }
-
-

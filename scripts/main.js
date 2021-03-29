@@ -258,6 +258,56 @@ document.addEventListener('DOMContentLoaded', () => {
                         place: ''
                     }
                 },
+
+                // ==========
+                {
+                    organization: 'Ассоциация КПК «Нижегородский кредитный союз»',
+                    adress: 'г. Нижний Новгород',
+                    contacts: {
+                        mail: '',
+                        phone: ''
+                    },
+                    person: {
+                        name: '',
+                        place: ''
+                    }
+                },
+                {
+                    organization: 'Ассоциация КПК «Нижегородский кредитный союз»',
+                    adress: 'г. Нижний Новгород',
+                    contacts: {
+                        mail: '',
+                        phone: ''
+                    },
+                    person: {
+                        name: '',
+                        place: ''
+                    }
+                },
+                {
+                    organization: 'Ассоциация КПК «Нижегородский кредитный союз»',
+                    adress: 'г. Нижний Новгород',
+                    contacts: {
+                        mail: '',
+                        phone: ''
+                    },
+                    person: {
+                        name: '',
+                        place: ''
+                    }
+                },
+                {
+                    organization: 'Ассоциация КПК «Нижегородский кредитный союз»',
+                    adress: 'г. Нижний Новгород',
+                    contacts: {
+                        mail: '',
+                        phone: ''
+                    },
+                    person: {
+                        name: '',
+                        place: ''
+                    }
+                },
                 
               
 
@@ -289,6 +339,24 @@ document.addEventListener('DOMContentLoaded', () => {
                     place: 'Председатель Правления КПК «Свой Дом», г. Краснодар'
                 },
 
+                // -------------------
+
+                {
+                    person: 'Баранов Виталий Витальевич',
+                    rights: 'Член «Дискуссионного клуба - Д&К» кредитной кооперации Член «Клуба директоров» в кредитной кооперации',
+                    place: 'Президент Ассоциации КПК «НКС»,	г. Нижний Новгород'
+                },
+                {
+                    person: 'Мешков Вадим Васильевич',
+                    rights: 'Модератор «Дискуссионного клуба - Д&К» кредитной кооперации',
+                    place: 'Исполнительный директор Южнорегиональной ассоциации кредитных союзов (ЮРАКС), г. Ростов-на-Дону Член Наблюдательного совета СКПК «Мой круг», г. Ростов-на-Дону'
+                },
+                {
+                    person: 'Мокина Светлана Валерьевна',
+                    rights: 'Член «Клуба директоров» в кредитной кооперации',
+                    place: 'Председатель Правления КПК «Свой Дом», г. Краснодар'
+                },
+
 
 
 
@@ -301,6 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // =======================================================================MEMBERS НАЧАЛО========================================================//
 
+       
         // получаем количество табов в пагинации MEMBERS
         const tabMemberCount = Math.ceil(data.members.length / 6);
 
@@ -332,6 +401,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 paginationVlues.insertAdjacentHTML('beforeend', `
                     <a href="#" class="pagination__link link-members">${i}</a>
                 `)
+
+                
             } else {
                 document.querySelector('.member-pagination-wr').style.display = 'none';
             }
@@ -367,6 +438,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // активируем первую таблицу 
         tableMembers[0].classList.add('table-members--active');
 
+        document.querySelectorAll('.link-members')[0].classList.add('pagination__link--active');
+
+        
         // =======================================================================MEMBERS КОНЕЦ========================================================//
 
 
@@ -434,6 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // активируем первую таблицу 
         tableGroupArr[0].classList.add('table-group--active');
 
+        document.querySelectorAll('.link-group')[0].classList.add('pagination__link--active');
 
 
         // =======================================================================GROUP КОНЕЦ========================================================//
@@ -469,7 +544,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const tableMembers = document.querySelectorAll('.table-members');
 
             links.forEach((item, i) => {
+                item.classList.remove('pagination__link--active');
                 if (item === target) {
+                    item.classList.add('pagination__link--active');
                     tableMembers.forEach((elem, ind) => {
                         elem.classList.remove('table-members--active');
                         if (ind === i) {
@@ -486,7 +563,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const tableMembers = document.querySelectorAll('.table-group');
 
             links.forEach((item, i) => {
+                item.classList.remove('pagination__link--active');
+
                 if (item === target) {
+                    item.classList.add('pagination__link--active');
+
                     tableMembers.forEach((elem, ind) => {
                         elem.classList.remove('table-group--active');
                         if (ind === i) {
@@ -520,7 +601,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    // members();
+    members();
 
 
 
