@@ -10,6 +10,19 @@
     .members {
         padding: 0 15px 61px 15px;
     }
+
+    .documents{
+        padding: 78px 15px 100px;
+
+        &__prev{
+            left: 0;
+        }
+
+        &__next{
+            right: 0;
+        }
+    }
+
 }
 
 
@@ -38,6 +51,29 @@
 
         &__email {
             width: 320px;
+        }
+    }
+
+    .documents{
+
+        &__prev{
+            width: 50px;
+            height: 50px;
+            img{
+                width: 60%;
+                height: 60%;
+                object-fit: contain;
+            }
+        }
+
+        &__next{
+            width: 50px;
+            height: 50px;
+            img{
+                width: 60%;
+                height: 60%;
+                object-fit: contain;
+            }
         }
     }
 
@@ -199,6 +235,27 @@
     .pagination__link {
         font-size: 24px;
         line-height: 34px;
+    }
+
+    .questions{
+        &__description{
+            font-size: 18px;
+        }
+    } 
+    .acardeon{
+        &__title{
+            font-size: 26px;
+        }
+
+        &__text{
+            font-size: 21px;
+        }
+    } 
+
+    .documents-slider{
+        &__item{
+            height: 360px;
+        }
     }
 }
 
@@ -372,6 +429,32 @@
         line-height: 28px;
     }
 
+    .questions{
+        &__description{
+            font-size: 18px;
+        }
+    } 
+    .acardeon{
+        &__title{
+            font-size: 23px;
+        }
+
+        &__text{
+            font-size: 18px;
+            max-width: 80%;
+        }
+    } 
+
+    .documents-slider{
+        &__item{
+            height: 300px;
+        }
+    }
+
+    .documents__text{
+        font-size: 26px;
+    }
+
 }
 
 //======================================================================= 910 ====================================
@@ -448,7 +531,12 @@
             line-height: 18px;
         }
     }
+
+    .documents{
+        padding: 10px 15px 50px;
+    }
 }
+
 
 
 //======================================================================= 768 ====================================
@@ -578,6 +666,30 @@
     .news__btn {
         width: 47px;
         background-size: contain;
+    }
+
+
+    .questions{
+        &__description{
+            font-size: 16px;
+        }
+    } 
+    .acardeon{
+        &__title{
+            font-size: 18px;
+        }
+
+        &__text{
+            font-size: 13px;
+        }
+        &__btn{
+            width: 30px;
+            height: 30px;
+        }
+    } 
+
+    .documents__text{
+        font-size: 22px;
     }
 }
 
@@ -726,6 +838,10 @@
         line-height: 24px;
     }
 
+    .acardeon__title {
+        font-size: 16px;
+    }
+
 
 }
 
@@ -839,6 +955,32 @@
         line-height: 20px;
     }
 
+
+    .acardeon{
+        &__title{
+            font-size: 14px;
+        }
+
+        &__text{
+            font-size: 12px;
+            max-width: 100%;
+        }
+        &__btn{
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+    } 
+
+    .questions{
+        padding-bottom: 50px;
+    } 
+
+
+    .documents{
+        padding: 0px 15px 50px;
+    }
+
 }
 
 //======================================================================= 480 ====================================
@@ -890,6 +1032,20 @@
         font-size: 12px;
         line-height: 14px;
     }
+
+    .documents__buttons{
+        display: none;
+    }
+
+    .documents__content{
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .documents__text{
+        font-size: 18px;
+    }
+
 }
 
 //======================================================================= 400 ====================================

@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     top: scrollHigth,
                     behavior: 'smooth'
                 });
+                togleMenu();
             })
         })
 
@@ -133,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    // acardeon();
+    acardeon();
 
 
     const documents = () => {
@@ -145,6 +146,15 @@ document.addEventListener('DOMContentLoaded', () => {
             navigation: {
                 nextEl: '.documents__next',
                 prevEl: '.documents__prev',
+            },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1
+                },
+                840: {
+                    slidesPerView: 3
+                }
             }
         })
 
@@ -158,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
-    // documents();
+    documents();
 
 
     const members = () => {
