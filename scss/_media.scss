@@ -11,14 +11,14 @@
         padding: 0 15px 61px 15px;
     }
 
-    .documents{
+    .documents {
         padding: 78px 15px 100px;
 
-        &__prev{
+        &__prev {
             left: 0;
         }
 
-        &__next{
+        &__next {
             right: 0;
         }
     }
@@ -54,27 +54,33 @@
         }
     }
 
-    .documents{
+    .documents {
 
-        &__prev{
+        &__prev {
             width: 50px;
             height: 50px;
-            img{
+
+            img {
                 width: 60%;
                 height: 60%;
                 object-fit: contain;
             }
         }
 
-        &__next{
+        &__next {
             width: 50px;
             height: 50px;
-            img{
+
+            img {
                 width: 60%;
                 height: 60%;
                 object-fit: contain;
             }
         }
+    }
+
+    .overlay-join {
+        padding: 0 15px;
     }
 
 
@@ -237,43 +243,58 @@
         line-height: 34px;
     }
 
-    .questions{
-        &__description{
+    .questions {
+        &__description {
             font-size: 18px;
         }
-    } 
-    .acardeon{
-        &__title{
+    }
+
+    .acardeon {
+        &__title {
             font-size: 26px;
         }
 
-        &__text{
+        &__text {
             font-size: 21px;
         }
-    } 
+    }
 
-    .documents-slider{
-        &__item{
+    .documents-slider {
+        &__item {
             height: 360px;
         }
     }
 
-    .footer{
-        &__logo{
+    .footer {
+        &__logo {
             width: 200px;
 
-            img{
+            img {
                 width: 100%;
                 object-fit: cover;
             }
         }
 
-        &__contacts{
+        &__contacts {
             font-size: 18px;
         }
 
-        &__rules{
+        &__rules {
             font-size: 18px;
+        }
+    }
+
+    .popup-join{
+        &__title {
+        font-size: 60px;
+        line-height: 70px;
+        }
+
+        &__subtitle{
+            font-size: 32px;
+        }
+        &__description{
+            font-size: 32px;
         }
     }
 }
@@ -448,44 +469,61 @@
         line-height: 28px;
     }
 
-    .questions{
-        &__description{
+    .questions {
+        &__description {
             font-size: 18px;
         }
-    } 
-    .acardeon{
-        &__title{
+    }
+
+    .acardeon {
+        &__title {
             font-size: 23px;
         }
 
-        &__text{
+        &__text {
             font-size: 18px;
             max-width: 80%;
         }
-    } 
+    }
 
-    .documents-slider{
-        &__item{
+    .documents-slider {
+        &__item {
             height: 300px;
         }
     }
 
-    .documents__text{
+    .documents__text {
         font-size: 26px;
     }
 
-    .footer{
-        &__logo{
+    .footer {
+        &__logo {
             width: 180px;
 
         }
 
-        &__contacts{
+        &__contacts {
             font-size: 16px;
         }
 
-        &__rules{
+        &__rules {
             font-size: 16px;
+        }
+    }
+
+    .popup-join{
+        padding: 100px 0;
+        &__title {
+            font-size: 45px;
+            line-height: 53px;
+        }
+
+        &__subtitle{
+            font-size: 26px;
+            margin-bottom: 60px;
+        }
+        &__description{
+            font-size: 26px;
         }
     }
 
@@ -566,7 +604,7 @@
         }
     }
 
-    .documents{
+    .documents {
         padding: 10px 15px 50px;
     }
 }
@@ -703,41 +741,60 @@
     }
 
 
-    .questions{
-        &__description{
+    .questions {
+        &__description {
             font-size: 16px;
         }
-    } 
-    .acardeon{
-        &__title{
+    }
+
+    .acardeon {
+        &__title {
             font-size: 18px;
         }
 
-        &__text{
+        &__text {
             font-size: 13px;
         }
-        &__btn{
+
+        &__btn {
             width: 30px;
             height: 30px;
         }
-    } 
+    }
 
-    .documents__text{
+    .documents__text {
         font-size: 22px;
     }
 
-    .footer{
-        &__logo{
+    .footer {
+        &__logo {
             width: 160px;
 
         }
 
-        &__contacts{
+        &__contacts {
             font-size: 14px;
         }
 
-        &__rules{
+        &__rules {
             font-size: 14px;
+        }
+    }
+
+    .popup-join{
+        padding: 80px 0;
+        &__title {
+            font-size: 35px;
+            line-height: 110%;
+        }
+
+        &__subtitle{
+            font-size: 20px;
+            margin-bottom: 45px;
+        }
+        &__description{
+            font-size: 20px;
+            max-width: 85%;
         }
     }
 }
@@ -891,30 +948,32 @@
         font-size: 16px;
     }
 
-    .footer{
+    .footer {
         padding: 50px 0;
-        &__wrapper{
+
+        &__wrapper {
             flex-direction: column;
             align-items: center;
         }
 
-        &__logo{
+        &__logo {
             margin-bottom: 20px;
         }
 
-        &__contacts{
+        &__contacts {
             text-align: center;
             margin-bottom: 20px;
         }
     }
 
-    .popup-documents{
+    .popup-documents {
         width: 90%;
         height: auto;
-            img{
-                width: 100%;
-                object-fit: cover;
-            }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
 
@@ -1031,29 +1090,46 @@
     }
 
 
-    .acardeon{
-        &__title{
+    .acardeon {
+        &__title {
             font-size: 14px;
         }
 
-        &__text{
+        &__text {
             font-size: 12px;
             max-width: 100%;
         }
-        &__btn{
+
+        &__btn {
             width: 20px;
             height: 20px;
             flex-shrink: 0;
         }
-    } 
+    }
 
-    .questions{
+    .questions {
         padding-bottom: 50px;
-    } 
+    }
 
 
-    .documents{
+    .documents {
         padding: 0px 15px 50px;
+    }
+
+
+    .popup-join{
+        padding: 55px 0;
+        &__title {
+            font-size: 26px;
+        }
+
+        &__subtitle{
+            font-size: 18px;
+            text-align: center;
+        }
+        &__description{
+            font-size: 16px;
+        }
     }
 
 }
@@ -1108,21 +1184,21 @@
         line-height: 14px;
     }
 
-    .documents__buttons{
+    .documents__buttons {
         display: none;
     }
 
-    .documents__content{
+    .documents__content {
         padding: 0;
         margin-top: 40px;
     }
 
-    .documents__text{
+    .documents__text {
         font-size: 18px;
     }
 
-    .documents-slider__item{
-        img{
+    .documents-slider__item {
+        img {
             height: 100%;
             width: 90%;
             object-fit: contain;
@@ -1185,6 +1261,25 @@
             span {
                 font-size: 16px;
             }
+        }
+    }
+
+    .popup-join{
+        padding: 45px 0;
+        &__title {
+            font-size: 22px;
+
+            &:after{
+                bottom: -8px;
+            }
+        }
+
+        &__subtitle{
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+        &__description{
+            font-size: 14px;
         }
     }
 }

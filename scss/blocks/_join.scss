@@ -118,8 +118,91 @@
         line-height: 37px;
         color: #2B2939;
 
-        &:hover{
+        &:hover {
             box-shadow: 0 0 7px 7px #2B2939;
         }
     }
+}
+
+
+
+.overlay-join {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 300;
+    visibility: hidden;
+   
+}
+
+.popup-join {
+    max-width: 1200px;
+    border-radius: 20px;
+    background: url(../img/offer/bg.jpg) repeat;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 112px 50px;
+
+    // .popup-join__title
+
+    &__title {
+        font-family: Philosopher;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 90px;
+        color: #2B2939;
+        text-align: center;
+        position: relative;
+        margin-bottom: 30px;
+
+        &:after {
+            content: '';
+            height: 3px;
+            width: 60%;
+            position: absolute;
+            left: 50%;
+            bottom: -2px;
+            transform: translateX(-50%);
+            background: #0E72AE;
+        }
+    }
+
+    // .popup-join__subtitle
+
+    &__subtitle {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 130.19%;
+        color: #2B2939;
+        margin-bottom: 100px;
+    }
+
+    // .popup-join__description
+
+    &__description {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 130.19%;
+        text-align: center;
+        color: #2B2939;
+        max-width: 790px;
+    }
+}
+
+
+.overlay-join--open{
+    visibility: visible;
 }

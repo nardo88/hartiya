@@ -463,6 +463,64 @@ document.addEventListener('DOMContentLoaded', () => {
     members();
 
 
+    const join = () => {
+
+        const joinForm = document.querySelector('.join__form');
+        const overlayJoin = document.querySelector('.overlay-join');
+       
+        joinForm.addEventListener('submit', formSend);
+
+        
+        overlayJoin.addEventListener('click', () => {
+            overlayJoin.classList.remove('overlay-join--open');
+
+        })
+     
+        // aerywbz отправки
+        async function formSend(e) {
+            e.preventDefault();
+            let formData = new FormData(joinForm);
+                // второй - это метод запроса (POST) и передаваемые данные
+                let response = await fetch('sendmail.php', {
+                    method: 'POST',
+                    body: formData,
+                })
+                // response - это ответ, если его параметр ok == true, тогда
+                if (response.ok){
+                    let result = await response.json()
+                    joinForm.reset()
+
+                    overlayJoin.classList.add('overlay-join--open')
+                    
+                    setTimeout(() => {
+                        overlayJoin.classList.remove('overlay-join--open')
+
+
+                    }, 4000)
+                } else {
+                    // мы выдаем alert c результатом
+                    alert('Ошибка!')
+                    console.log(response);
+                }
+            
+        };
+    
+       
+    
+    
+        
+    
+    
+
+
+        //===============================================================
+   
+
+    }
+
+    join();
+
+
 
 
 })
