@@ -177,8 +177,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const membersCaption = document.querySelectorAll('.members__caption');
         const tabsItem = document.querySelectorAll('.tabs__item');
         // получаем таблицы
-        // const tableMembers = document.querySelector('.table-members').children[0];
-        // const tableGroup = document.querySelector('.table-group').children[0];
 
 
         // получаем обертку для members
