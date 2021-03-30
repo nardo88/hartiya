@@ -23,15 +23,17 @@
                     </div>
                     <div class="header__social">
                         <div class="header__social-links">
-                            <a href="#" class="header__social-link">
-                                <img src="./img/header/whatsApp.svg" alt="">
+                            <a href="https://vk.com/public203651099" class="header__social-link">
+                                <img src="./img/header/vk.svg" alt="logo vk">
                             </a>
-                            <a href="#" class="header__social-link">
-                                <img src="./img/header/facebook.svg" alt="">
+                            <a href="https://www.facebook.com/groups/338769410846469" class="header__social-link">
+                                <img src="./img/header/facebook.png" alt="logo facebook">
                             </a>
-                            <a href="#" class="header__social-link">
-                                <img src="./img/header/telegram.svg" alt="">
+
+                            <a href="https://www.instagram.com/charta_msk" class="header__social-link">
+                                <img src="./img/header/insta.svg" alt="logo instagram">
                             </a>
+                            
                         </div>
                         <a href="#!" class="header__request request">Присоединиться</a>
                     </div>
@@ -50,7 +52,7 @@
                             <a data-scroll="#about" href="#!" class="nav__link nav__link--scroll">О Хартии</a>
                         </li>
                         <li class="nav__item">
-                            <a data-scroll="#members" href="#!" class="nav__link nav__link--scroll">Участники/Инициативная группа</a>
+                            <a data-scroll="#members" href="#!" class="nav__link nav__link--scroll">Участники/Оргкомитет</a>
                         </li>
                         <li class="nav__item">
                             <a data-scroll="#questions" href="#!" class="nav__link nav__link--scroll">Вопросы-Ответы</a>
@@ -73,15 +75,17 @@
                             <a href="tel:8784457403893">+7 (84457) 40-38-93</a>
                         </div>
                         <div class="nav__mobile-social">
-                            <a href="#" class="header__social-link">
-                                <img src="./img/header/whatsApp.svg" alt="">
+                            <a href="https://vk.com/public203651099" class="header__social-link">
+                                <img src="./img/header/vk.svg" alt="logo vk">
                             </a>
-                            <a href="#" class="header__social-link">
-                                <img src="./img/header/facebook.svg" alt="">
+                            <a href="https://www.facebook.com/groups/338769410846469" class="header__social-link">
+                                <img src="./img/header/facebook.png" alt="logo facebook">
                             </a>
-                            <a href="#" class="header__social-link">
-                                <img src="./img/header/telegram.svg" alt="">
+
+                            <a href="https://www.instagram.com/charta_msk" class="header__social-link">
+                                <img src="./img/header/insta.svg" alt="logo instagram">
                             </a>
+                           
                         </div>
                     </div>
 
@@ -103,7 +107,7 @@
         </div>
     </header>
 
-
+<!--  -->
     <section class="statistics">
         <div class="statistics__border">
             <div class="container">
@@ -225,7 +229,7 @@
                 <div class="members__wrapper">
                     <div class="members__title">
                         <h2 class="members__caption members__active-title">Участники</h2> <span>/</span>
-                        <h2 class="members__caption">Инициативная группа</h2>
+                        <h2 class="members__caption">Оргкомитет</h2>
                     </div>
 
                     <div class="members__tabs tabs ">
@@ -289,7 +293,7 @@
                             </div>
                             <div class="acardeon__bottom">
                                 <div class="acardeon__text">
-                                    Направить документы Устав, ИНН, заявление о присоединении на электронную почту info@hartiya_msk.ru
+                                    Направить документы Устав, ИНН, заявление о присоединении на электронную почту charta_msk@bk.ru
                                 </div>
                             </div>
                         </div>
@@ -301,7 +305,7 @@
                             </div>
                             <div class="acardeon__bottom">
                                 <div class="acardeon__text">
-                                    Модерация может занимать до трех дней, по истечении этого срока обратитесь на почту info@hartiya_msk.ru, указав название организации и ИНН.
+                                    Модерация может занимать до трех дней, по истечении этого срока обратитесь на почту charta_msk@bk.ru, указав название организации и ИНН.
                                 </div>
                             </div>
                         </div>
@@ -325,7 +329,7 @@
                             </div>
                             <div class="acardeon__bottom">
                                 <div class="acardeon__text">
-                                    Вы можете скачать его по <a href="#!">ссылке</a>.
+                                    Вы можете скачать его по <a target="_blank" href="https://drive.google.com/file/d/18pnYa2fs82RZo2oelcpLvjtPLRVL7hhW/view">ссылке</a>.
                                 </div>
                             </div>
                         </div>
@@ -399,9 +403,27 @@
     <div class="overlay-offer">
         <div class="popup-offer">
             <h2 class="popup-offer__title">Жалоба/Предложение</h2>
-            <p class="popup-offer__description">Опишите, пожалуйста, проблему или пожелания</p>
             <form action="#!" class="popup-offer__form">
-                <textarea name="message" id="message" class="popup-offer__message"></textarea>
+                
+                <div class="popup-offer__form-item">
+                    <input name="name" class="first" type="text" required placeholder="ФИО">
+                    <input name="organization" class="second" type="text" placeholder="Организация">
+                    <input name="region" class="third " type="text" placeholder="Регион">
+                </div>
+
+                <div class="popup-offer__form-item">
+                    <input name="inn" class="first" type="text" placeholder="ИНН">
+                    <input name="phone" class="second" type="phone" required placeholder="Телефон*">
+                    <input name="email" class="third " type="email" required placeholder="Email*">
+                </div>
+                <div class="popup-offer__form-item popup-offer__form-item--column">
+                    <p class="popup-offer__description">Опишите, пожалуйста, проблему или пожелания</p>
+                    <textarea name="message" id="message" class="popup-offer__message"></textarea>
+                </div>
+                <div class="politics">
+                    Отправляя запрос, Вы принимаете условия <a target="_blank" href="./politica.html">соглашения</a> и <a target="_blank" href="./politica.html">политики конфиденциальности</a>
+                </div>
+
                 <div class="popup-offer__bottom">
                     <button class="popup-offer__btn cancel">Отменить</button>
                     <button class="popup-offer__btn send">Отправить</button>
@@ -420,7 +442,7 @@
         <div class="popup-join">
             <h2 class="popup-join__title">Спасибо за Ваше доверие!</h2>
             <p class="popup-join__subtitle">Добро пожаловать в команду профессионалов.</p>
-            <p class="popup-join__description">Ожидайте, к Вам на почту придет  инструкция для вступления в Хартию</p>
+            <p class="popup-join__description">Ожидайте, к Вам на почту придет инструкция для вступления в Хартию</p>
         </div>
     </div>
 

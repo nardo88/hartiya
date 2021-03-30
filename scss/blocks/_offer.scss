@@ -10,7 +10,7 @@
     visibility: hidden;
 
 
-   
+
 
 }
 
@@ -66,6 +66,32 @@
 
     &__form {
         width: 100%;
+
+        &-item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+
+            input {
+                border: 1px solid #2B2939;
+                box-sizing: border-box;
+                border-radius: 12px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 37px;
+                color: #2B2939;
+                opacity: 0.5;
+                padding: 6px 25px;
+            }
+
+            &--column {
+                flex-direction: column;
+            }
+
+        }
     }
 
     // .popup-offer__message
@@ -112,7 +138,7 @@
         color: #2B2939;
         cursor: pointer;
         outline: none;
-        
+
     }
 }
 
@@ -123,10 +149,10 @@
     transition: .3s;
 
 
-    &:hover{
+    &:hover {
         background: #2B2939;
         color: #E2E2E2;
-    
+
     }
 }
 
@@ -136,23 +162,48 @@
     border: 2px solid #DD2205;
     transition: .3s;
 
-    &:hover{
+    &:hover {
         color: #DD2205;
         background: #ffffff;
-    
+
     }
 
 }
 
 
 
-.overlay-offer--active{
+.overlay-offer--active {
     visibility: visible;
 }
 
 
 
-.popup-offer--active{
+.popup-offer--active {
     top: 50%;
 
+}
+
+.first {
+    width: 416px;
+    margin-right: 45px;
+}
+
+.second {
+    width: 348px;
+    margin-right: 45px;
+
+}
+
+.third {
+    width: 250px;
+}
+
+.politics {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130.19%;
+    color: #2B2939;
+    margin-top: 15px;
 }

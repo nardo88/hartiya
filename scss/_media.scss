@@ -284,18 +284,34 @@
         }
     }
 
-    .popup-join{
+    .popup-join {
         &__title {
-        font-size: 60px;
-        line-height: 70px;
+            font-size: 60px;
+            line-height: 70px;
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 32px;
         }
-        &__description{
+
+        &__description {
             font-size: 32px;
         }
+    }
+
+    .first {
+        width: 305px;
+        margin-right: 0px;
+    }
+
+    .second {
+        width: 305px;
+        margin-right: 0px;
+
+    }
+
+    .third {
+        width: 250px;
     }
 }
 
@@ -511,20 +527,39 @@
         }
     }
 
-    .popup-join{
+    .popup-join {
         padding: 100px 0;
+
         &__title {
             font-size: 45px;
             line-height: 53px;
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 26px;
             margin-bottom: 60px;
         }
-        &__description{
+
+        &__description {
             font-size: 26px;
         }
+    }
+
+    .popup-offer__form-item input{
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .first {
+        width: 30%;
+    }
+
+    .second {
+        width: 30%;
+    }
+
+    .third {
+        width: 30%;
     }
 
 }
@@ -606,6 +641,10 @@
 
     .documents {
         padding: 10px 15px 50px;
+    }
+
+    .politics{
+        font-size: 14px;
     }
 }
 
@@ -781,21 +820,55 @@
         }
     }
 
-    .popup-join{
+    .popup-join {
         padding: 80px 0;
+
         &__title {
             font-size: 35px;
             line-height: 110%;
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 20px;
             margin-bottom: 45px;
         }
-        &__description{
+
+        &__description {
             font-size: 20px;
             max-width: 85%;
         }
+    }
+
+    
+    .popup-offer__form-item{
+        flex-direction: column;
+        margin-top: 0;
+
+        input{
+            font-size: 20px;
+            line-height: 27px;
+            width: 100%;
+            margin-top: 10px;
+
+            
+        }
+
+        &:first-child{
+            margin-top: 20px;
+        }
+
+    } 
+
+    .first {
+        width: 30%;
+    }
+
+    .second {
+        width: 30%;
+    }
+
+    .third {
+        width: 30%;
     }
 }
 
@@ -976,7 +1049,17 @@
         }
     }
 
+    .popup-offer__form-item{
 
+        input{
+            font-size: 18px;
+            line-height: 22px;
+        }
+    } 
+
+    .politics{
+        font-size: 12px;
+    }
 }
 
 //======================================================================= 576 ====================================
@@ -1117,20 +1200,31 @@
     }
 
 
-    .popup-join{
+    .popup-join {
         padding: 55px 0;
+
         &__title {
             font-size: 26px;
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 18px;
             text-align: center;
         }
-        &__description{
+
+        &__description {
             font-size: 16px;
         }
     }
+
+    
+    .popup-offer__form-item{
+
+        input{
+            font-size: 14px;
+            line-height: 18px;
+        }
+    } 
 
 }
 
@@ -1264,21 +1358,23 @@
         }
     }
 
-    .popup-join{
+    .popup-join {
         padding: 45px 0;
+
         &__title {
             font-size: 22px;
 
-            &:after{
+            &:after {
                 bottom: -8px;
             }
         }
 
-        &__subtitle{
+        &__subtitle {
             font-size: 16px;
             margin-bottom: 30px;
         }
-        &__description{
+
+        &__description {
             font-size: 14px;
         }
     }

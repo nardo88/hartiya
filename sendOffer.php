@@ -23,6 +23,29 @@
     $body = '<h1>Письмо из раздела "Жалобы и предложения"</h1>';
     // если поле есть то формируем разметку html 
     // c данныи и все это пушим в тело ответа
+    if (trim(!empty($_POST['name']))){
+        $body.='<p><strong>От кого (ФИО):</strong> '.$_POST['name'].'</p>';
+    }
+    if (trim(!empty($_POST['organization']))){
+        $body.='<p><strong>Организация:</strong> '.$_POST['organization'].'</p>';
+    }
+    if (trim(!empty($_POST['region']))){
+        $body.='<p><strong>Регион:</strong> '.$_POST['region'].'</p>';
+    }
+
+    if (trim(!empty($_POST['inn']))){
+        $body.='<p><strong>ИНН:</strong> '.$_POST['inn'].'</p>';
+    }
+
+    if (trim(!empty($_POST['phone']))){
+        $body.='<p><strong>Телефон:</strong> '.$_POST['phone'].'</p>';
+    }
+    if (trim(!empty($_POST['email']))){
+        $body.='<p><strong>Email:</strong> '.$_POST['email'].'</p>';
+    }
+
+
+
     if (trim(!empty($_POST['message']))){
         $body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
     }
