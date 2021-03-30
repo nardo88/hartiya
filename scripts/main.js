@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const offer = document.querySelector('.offer');
         const header = document.querySelector('.header');
         const nav = document.querySelector('.nav');
+        const popupOfferForm = document.querySelector('.popup-offer__form');
 
            // overlay-offer--active
         const overlayOffer = document.querySelector('.overlay-offer');
@@ -41,7 +42,35 @@ document.addEventListener('DOMContentLoaded', () => {
             if (target.classList.contains('overlay-offer--active')){
                 closePopupOffer();
             }
+            if (target.classList.contains('cancel')){
+                e.preventDefault();
+                closePopupOffer();
+            }
         })
+
+        popupOfferForm.addEventListener('submit', sendOffer)
+
+        async function sendOffer (e) {
+            e.preventDefault();
+            let formData = new FormData(popupOfferForm);
+            // второй - это метод запроса (POST) и передаваемые данные
+            let response = await fetch('sendOffer.php', {
+                method: 'POST',
+                body: formData,
+            })
+            // response - это ответ, если его параметр ok == true, тогда
+            if (response.ok){
+                let result = await response.json()
+                popupOfferForm.reset()
+                alert('Ваше собщение отправлено!')
+                closePopupOffer();
+                
+            } else {
+                // мы выдаем alert c результатом
+                alert('Ошибка!')
+                console.log(response);
+            }
+        }
 
         // открытие закрытие меню на мобильной версии
 
@@ -168,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const target = e.target.closest('.documents-slider__item');
             if (target){
                 
-                openPopupDocument(target.children[0].src.split('.')[0]);
+                openPopupDocument(target.children[0].src.split('.')[1]);
             }
         })
 
@@ -504,16 +533,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             
         };
-    
-       
-    
-    
-        
-    
-    
-
-
-        //===============================================================
    
 
     }
