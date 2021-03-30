@@ -313,6 +313,11 @@
     .third {
         width: 250px;
     }
+
+    .tabs__info{
+        font-size: 20px;
+        line-height: 110%;
+    }
 }
 
 
@@ -645,6 +650,10 @@
 
     .politics{
         font-size: 14px;
+    }
+
+    .tabs__info{
+        font-size: 15px;
     }
 }
 
@@ -1060,6 +1069,10 @@
     .politics{
         font-size: 12px;
     }
+
+    .tabs__info{
+        font-size: 12px;
+    }
 }
 
 //======================================================================= 576 ====================================
@@ -1226,6 +1239,10 @@
         }
     } 
 
+    .tabs__info{
+        font-size: 9px;
+    }
+
 }
 
 //======================================================================= 480 ====================================
@@ -1298,6 +1315,16 @@
             object-fit: contain;
         }
     }
+
+    .tabs__info{
+        position: static;
+        margin-bottom: 20px;
+    }
+
+    .members__title{
+        margin-bottom: 0;
+    }
+
 
 }
 

@@ -314,6 +314,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // активируем первую таблицу 
             tableMembers[0].classList.add('table-members--active');
 
+            // заполняем количество участников и членов оргкомитета
+            const tabsInfoMembersValue = document.querySelector('.tabs__info-members-value');
+            tabsInfoMembersValue.innerHTML = `Зарегистрировано ${data.members.length} организаций`;
+
+            const tabsInfoGroupValue = document.querySelector('.tabs__info-group-value');
+            tabsInfoGroupValue.innerHTML = `Зарегистрировано ${data.group.length} участников`;
 
             const linksMember = document.querySelectorAll('.link-members');
             if (linksMember.length){
@@ -464,15 +470,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // обработчик события на клик
             membersSection.addEventListener('click', e => {
-                e.preventDefault();
+                
                 const target = e.target;
                 // кликаем по заголовкам
                 if (target.classList.contains('members__caption')) {
+                    e.preventDefault();
                     memberTabs(target)
                 }
 
                 // кликаем по пагинации members
                 if (target.classList.contains('link-members')) {
+                    e.preventDefault();
                     paginationMembers(target);
                 }
 
