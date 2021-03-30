@@ -190,21 +190,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const openPopupDocument = (src) => {
             overlayDocuments.classList.add('overlay-documents--open');
-            popupDocumentsImg.src = `${src}-big.jpg`;
+            popupDocumentsImg.src = `${src}`;
         }
 
         documentsSlider.addEventListener('click', e => {
             const target = e.target.closest('.documents-slider__item');
             if (target){
-                
-                openPopupDocument(target.children[0].src.split('.')[1]);
+                openPopupDocument(target.children[0].dataset.src);
             }
         })
 
         overlayDocuments.addEventListener('click', (e) => {
-            if (e.target.closest('.popup-documents')){
-                return
-            }
+       
             overlayDocuments.classList.remove('overlay-documents--open');
             popupDocumentsImg.src = '';
 

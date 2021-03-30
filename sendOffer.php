@@ -15,7 +15,7 @@
     // от кого письмо
     $mail->setFrom('hartiya2021@gmail.com', 'Максим');
     // кому отправлять
-    $mail->addAddress('nardo1988@mail.ru');
+    $mail->addAddress('charta_msk@bk.ru');
     // тема письма
     $mail->Subject = 'Хартия (Жалобы и предложения)';
    
